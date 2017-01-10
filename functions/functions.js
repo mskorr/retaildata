@@ -43,15 +43,17 @@ function change_select_item_type(val)
         $('#comment').prop('disabled', true);
         $('#unit_value').prop('disabled', true);
         $('#unit').prop('disabled', true);
-        $('#family').prop('disabled', true);
-        $('#brand').prop('disabled', true);
-        $('#brand_link').prop('disabled', true); 
+        $('.selectpicker').selectpicker('destroy');
+//        $('#family').prop('disabled', true);
+//        $('#brand').prop('disabled', true);
+        $('#brand_link').prop('disabled', true);  
         $('#description').prop('disabled', true);
         $('#packaging').prop('disabled', true);
         $('#offer_value').prop('disabled', true);
         $('#quality').prop('disabled', true);
     } else
     {
+         $('.selectpicker').selectpicker('render');
         $('#comment').prop('disabled', false);
         $('#unit_value').prop('disabled', false);
         $('#unit').prop('disabled', false);
@@ -490,7 +492,7 @@ function saveDetail(barcode)
             {
                 status = 2; 
             }
-            
+             
             if (document.getElementById('radio_yes').checked) 
             {
                 offer_value = document.getElementById("offer_value").value; 
@@ -512,7 +514,7 @@ function saveDetail(barcode)
 //        prompt("u",u);    
     var r = syncAjax(u); 
  
-    if (r.result === 1) 
+    if (r.result === 1)  
     {
         //        alert("this is x " + x);  
         if(x === 0)
