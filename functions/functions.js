@@ -51,7 +51,7 @@ function change_select_item_type(val)
         $('#packaging').prop('disabled', true);
         $('#offer_value').prop('disabled', true);
         $('#quality').prop('disabled', true);
-    } else
+    } else 
     {
          $('.selectpicker').selectpicker('render');
         $('#comment').prop('disabled', false);
