@@ -238,7 +238,7 @@ if(r.offer_value !== 'null')
 }
 else if (r.offer_value === 'null')
 {
-//    alert("the offer is null")
+//    alert("the offer is null") 
     $("#offer_value").val(' ');  
 }
 //else if(r.offer_value ==='')
@@ -495,7 +495,7 @@ function saveDetail(barcode)
             {
                 offer_value = document.getElementById("offer_value").value; 
                 offer = 1;
-                alert("the offer is yes and this is the value " + offer_value);
+//                alert("the offer is yes and this is the value " + offer_value);
                 
 
             } else if (document.getElementById('radio_no').checked)

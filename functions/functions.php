@@ -317,7 +317,7 @@ $offer_string = " '" . $offer_value . "'";
 //    function check_user_decision($barcode)
 //    {
 //          $query = " ";  
-//         
+//          
 //        return $this->query($query); 
 //    }
     
